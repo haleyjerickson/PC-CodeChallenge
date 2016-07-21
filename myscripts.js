@@ -48,8 +48,9 @@ $(document).ready(function () {
 			// grep function filters array - compares user's input with name and type properties
 			var filteredProducts = $.grep(sortProductArray, function(product) {
 
-				product.name = product.name.split("(US)")[0];	// removes redundant info from every
-																// object name - ie (US) - bank
+				// removes redundant info from every object name - ie (US) - bank
+				product.name = product.name.split("(US)")[0].replace(/(\s[-])((\s)([a-zA-Z'-]+))*/gm, "");
+				
 				if (product.type === "CREDIT_CARD") {
 					product.type = product.type.replace("_", " ");	// adds space to credit card type
 				}
