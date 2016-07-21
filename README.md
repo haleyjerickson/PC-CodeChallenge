@@ -1,7 +1,7 @@
 # PC-CodeChallenge
 
 # Summary
-This is a one page app where a user inputs text and receives a data table containing products from the included JSON data file that match the user’s search. The results are displayed in the same page using Ajax and Handlebars.js (a templating engine). They are ranked alphabetically based on the product names.
+This is a one page app where a user inputs text and receives a data table containing products from the included JSON data file that match the user’s search. The results are displayed in the same page using Handlebars (a templating engine). They are ranked alphabetically based on the product names.
 
 # Additional Notes
 I tried to remove most of the redundancy in the data, so the user can search through the results more quickly. For example, I removed duplicates and combined the products with the same name and url together. I also added each url’s favicon next to their link to add to the visual experience of the app and help users be able to recognize the products at a glance.
