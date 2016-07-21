@@ -1,0 +1,38 @@
+/* General Class Styles */
+.center {
+	text-align: center;
+}
+
+.marginTop {
+	margin-top: 30px;
+}
+
+.marginBottom {
+	margin-bottom: 30px;
+}
+
+/* Pagination Plugin Styles */
+.paging-nav {
+	text-align: center;
+}
+
+.paging-nav a {
+	margin: auto 2px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1px 7px;
+	margin-bottom: 15px;
+	background: #91b9e6;
+	color: white;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.paging-nav a:hover {
+	background: #187ed5;
+}
+
+.paging-nav .selected-page {
+	background: #187ed5;
+	font-weight: bold;
+}
