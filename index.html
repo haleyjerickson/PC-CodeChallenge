@@ -35,6 +35,9 @@
 	    <!-- Javascript Pagination Plugin: http://www.jqueryscript.net/table/Client-side-HTML-Table-Pagination-Plugin-with-jQuery-Paging.html -->
 	    <script src="paging.js"></script>
 
+	    <!-- Typeahead jQuery Plugin: https://twitter.github.io/typeahead.js/ -->
+	    <script src="typeahead.bundle.js"></script>
+
 	</head>
 
 	<body>
@@ -52,8 +55,22 @@
 					<form class="marginTop">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-							<input class="form-control" type="text" id="userInput"/>
-						</div>						
+							<input class="form-control typeahead" type="text" id="userInput"/>
+						</div>
+
+						</br>
+
+						<div class="form-inline">
+							<label for="userSelectType">Select Type:</label>
+							<select class="form-control" id="userSelectType">
+								<option>ALL</option>
+								<option>BANK</option>
+								<option>CREDIT CARD</option>
+								<option>INVESTMENT</option>
+								<option>LOAN</option>
+								<option>MORTGAGE</option>
+							</select>
+						</div>			
 					</form>
 
 					</br>
